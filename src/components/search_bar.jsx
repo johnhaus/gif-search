@@ -16,6 +16,10 @@ class SearchBar extends Component {
     this.props.searchFunction(event.target.value);
   }
 
+  shouldComponentUpdate() {
+    return false;
+  }
+
   render() {
     return (
       <input
