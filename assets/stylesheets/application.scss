@@ -14,6 +14,17 @@
     border: none;
     font-size: 2.6em;
     box-shadow: none;
+    &::placeholder {
+      opacity: .4; /* Firefox */
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      opacity: .4;
+    }
+
+    &::-ms-input-placeholder { /* Microsoft Edge */
+      opacity: .4;
+    }
     &:focus {
       box-shadow: none;
     }
